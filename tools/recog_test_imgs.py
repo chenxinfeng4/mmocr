@@ -53,6 +53,7 @@ def main():
 
     # init the logger before other steps
     timestamp = time.strftime('%Y%m%d_%H%M%S', time.localtime())
+    mmcv.mkdir_or_exist(args.out_dir)
     log_file = osp.join(args.out_dir, f'{timestamp}.log')
     logger = get_root_logger(log_file=log_file, log_level='INFO')
 

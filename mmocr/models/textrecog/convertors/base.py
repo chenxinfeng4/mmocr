@@ -20,6 +20,7 @@ class BaseConvertor:
     lower = False
 
     dicts = dict(
+        DICT10=tuple('0123456789'),
         DICT36=tuple('0123456789abcdefghijklmnopqrstuvwxyz'),
         DICT90=tuple('0123456789abcdefghijklmnopqrstuvwxyz'
                      'ABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&\'()'
